@@ -1567,8 +1567,7 @@ void sift_test1B(
         } 
   
         float time_us_per_query = stopw2.getElapsedTimeMicro() / qsize;
-        printf("time_us_per_query = %.5f\n", time_us_per_query);
-
+	
 	cout << "Loading GT:\n";
     ifstream inputGT(path_gt, ios::binary);
     unsigned int *massQA = new unsigned int[qsize * maxk];
